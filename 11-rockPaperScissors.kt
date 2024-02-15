@@ -22,6 +22,25 @@ fun rps(p1: String, p2: String): String {
     return result
 }
 
+// Best Practices
+// fun rps(p1: String, p2: String): String {
+//     val rpsRules = mapOf(
+//         "paper" to "rock",
+//         "scissors" to "paper",
+//         "rock" to "scissors"
+//     )
+
+//     if (p1 == p2) {
+//         return "Draw!"
+//     } else {
+//         if (rpsRules[p1] == p2) {
+//             return "Player 1 won!"
+//         } else {
+//             return "Player 2 won!"
+//         }
+//     }
+// }
+
 fun main() {
     // Player 1 won!
     println(rps("rock", "scissors"));
