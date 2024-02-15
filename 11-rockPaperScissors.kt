@@ -8,16 +8,15 @@ fun rps(p1: String, p2: String): String {
         1 to "scissors",
         2 to "paper"
     )
-    var result = ""
-    if (p1 == p2) {
-        result = "Draw!"
+    var result = if (p1 == p2) {
+        "Draw!"
     } else if (p1 == rpsValue[0] && p2 == rpsValue[1] ||
                 p1 == rpsValue[1] && p2 == rpsValue[2] ||
                 p1 == rpsValue[2] && p2 == rpsValue[0]
     ) {
-        result = "Player 1 won!"
+        "Player 1 won!"
     } else {
-        result = "Player 2 won!"
+        "Player 2 won!"
     }
     return result
 }
@@ -30,15 +29,16 @@ fun rps(p1: String, p2: String): String {
 //         "rock" to "scissors"
 //     )
 
-//     if (p1 == p2) {
-//         return "Draw!"
+//     var result = if (p1 == p2) {
+//         "Draw!"
 //     } else {
 //         if (rpsRules[p1] == p2) {
-//             return "Player 1 won!"
+//             "Player 1 won!"
 //         } else {
-//             return "Player 2 won!"
+//             "Player 2 won!"
 //         }
 //     }
+//     return result
 // }
 
 fun main() {
