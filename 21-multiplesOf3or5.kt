@@ -1,5 +1,5 @@
 // Day 21/366
-// 
+// https://www.codewars.com/kata/514b92a657cdc65150000006
 
 // My Answers
 fun solution(number: Int) =(1..number-1).asSequence().filter { it % 3 == 0 || it % 5 == 0 }.sum()
